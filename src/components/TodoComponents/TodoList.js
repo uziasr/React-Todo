@@ -6,10 +6,11 @@ import Todo from './Todo'
 function TodoList(props){
     return(
         <>
-            {props.todo.map(
-                item=>{
-                    return (<Todo item={item}/>)
-            })}
+        {props.todo.map(
+            item=>{
+                return (<Todo key={item.id} item={item} toggleItem={props.toggleItem}/>)
+        })}
+         <button onClick={props.clearCompleted}>Clear Completed</button>
         </>
     );
 

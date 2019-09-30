@@ -22,7 +22,7 @@ class TodoForm extends React.Component{
 
     render(){
     return(
-        <label>
+        <>
             <form onSubmit={this.submitItem}>
                 <input
                 type='text'
@@ -31,7 +31,7 @@ class TodoForm extends React.Component{
                 />
                 <button>Add</button>
             </form>
-        </label>
+            </>
     )
 }
 }
