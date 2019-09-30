@@ -1,10 +1,11 @@
 import React from 'react'
 
 const Todo = (props)=>{
-    console.log(props.item)
+    console.log(props)
+    console.log('hello')
     return(
         <>
-            <p>{props.item.id}</p>
+            <p>{props.item.name}</p>
         </>
     )
 }

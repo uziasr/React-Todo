@@ -6,15 +6,13 @@ import Todo from './Todo'
 function TodoList(props){
     return(
         <>
-{props.todo.forEach(
-    item=>{
-        console.log(item)
-        return (<Todo item={item}/>)
-    }
-)}
-</>
-)
+            {props.todo.map(
+                item=>{
+                    return (<Todo item={item}/>)
+            })}
+        </>
+    );
 
-}
+};
 
 export default TodoList
