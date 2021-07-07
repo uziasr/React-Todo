@@ -1,0 +1,11 @@
+.completed{
+    text-decoration: line-through;
+    background: whitesmoke;
+}
+
+body{
+    /* background-image: linear-gradient(to right top, #051937, #00476e, #007b9f, #00b3c1, #12ebd1); */
+    background: steelblue;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
